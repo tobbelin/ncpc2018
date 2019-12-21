@@ -1,0 +1,24 @@
+\problemname{Jumbled String}
+
+\illustration{0.42}{thread}{\href{https://pixabay.com/en/thread-tangle-knitting-needlework-1484387/}{Picture} by snd63 via pixabay, CC0}%
+\noindent
+Recall that a \emph{subsequence} of a string is any string obtained by removing some subset of characters from the string, for instance ``string'', ``sing'', ``i'' and ``sg'' are all subsequences of ``string''.  If the same subsequence can be obtained in exactly $t$ different ways, by removing different subsets of characters, we say that the subsequence occurs $t$ times.
+
+Jingfei wants to create a nonempty bit string that has the following properties:
+\begin{enumerate}
+\setlength{\itemsep}{0pt}
+\item the subsequence \texttt{00} occurs $a$ times,
+\item the subsequence \texttt{01} occurs $b$ times,
+\item the subsequence \texttt{10} occurs $c$ times, and
+\item the subsequence \texttt{11} occurs $d$ times.
+\end{enumerate}
+However, Jingfei does not know how to create such a string -- or whether it is even possible. Could you help her?
+
+\section*{Input}
+
+The input consists of a single line with four integers $a$, $b$, $c$, and
+$d$ ($0 \leq a,b,c,d \leq 10^9$).
+
+\section*{Output}
+
+Output a bit string that satisfies the given requirements. If there are several solutions, output any one of them. If there are no solutions, output ``\texttt{impossible}''.

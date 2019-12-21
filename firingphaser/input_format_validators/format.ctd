@@ -1,0 +1,10 @@
+INT(1, 15, n) SPACE INT(1, 1000, l) NEWLINE
+REPI(i, n)
+   INT(0, 1000, x1[i]) SPACE
+   INT(0, 1000, y1[i]) SPACE
+   INT(x1[i]+1, 1000, x2[i]) SPACE
+   INT(y1[i]+1, 1000, y2[i]) NEWLINE
+   REPI(j, i)
+      ASSERT(x2[i] < x1[j] || x2[j] < x1[i] || y2[i] < y1[j] || y2[j] < y1[i])
+   END
+END

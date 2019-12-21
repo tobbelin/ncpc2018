@@ -1,0 +1,27 @@
+
+We will binary search the answer, and instead ask "can we deliver the pizzas so
+that no customer receives his pizza more than T seconds after he placed the
+order?"
+
+Now we want to determine if it is possible to split the list of orders into
+segments, where the orders in each segment are delivered together without
+violating the above condition. The following recurrence gives the earliest time
+the delivery car can be back at the pizzeria without violating the condition,
+assuming that orders {0,1,...,done} have been delivered:
+
+    earliest_time(-1) = 0
+    earliest_time(done) = min_{0 <= segment_start <= done}( earliest_time(segment_start-1) + simulate(segment_start, done) if possible(earliest_time(segment_start-1), segment_start, done) )
+
+where
+
+    simulate(segment_start, done) is the time it takes to deliver orders {segment_start, ..., done} starting and ending at the pizzeria
+    possible(start_time, segment_start, done) indicates whether it is possible to deliver orders {segment_start, ..., done} starting at the pizzeria at time start_time
+
+Time complexity:
+    - All-pairs shortest-paths can be precomputed in O(nm log(n))
+    - simulate can be easily precomputed in O(k^2)
+    - possible can also be precomputed in O(k^2) after noticing that start_time can be ignored during precomputation
+    - earliest_time can be computed in O(k^2) using dynamic programming
+
+In total, the time complexity is O(nm log(n) + k^2 log(V)) where V is the largest possible answer.
+

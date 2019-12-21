@@ -1,0 +1,7 @@
+source: Nordic Collegiate Programming Contest 2018
+license: cc by-sa
+author: Antti Laaksonen
+validation: custom
+
+limits:
+   time_multiplier: 3

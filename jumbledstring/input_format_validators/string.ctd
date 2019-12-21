@@ -1,0 +1,8 @@
+INT(0, 10^9, a)
+SPACE
+INT(0, 10^9, b)
+SPACE
+INT(0, 10^9, c)
+SPACE
+INT(0, 10^9, d)
+NEWLINE

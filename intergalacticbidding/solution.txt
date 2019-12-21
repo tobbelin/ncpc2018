@@ -1,0 +1,3 @@
+
+Greedy knapsack of a superincreasing sequence.
+

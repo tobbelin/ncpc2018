@@ -1,0 +1,9 @@
+INT(1, 10^6, l) SPACE INT(1, 100, m) NEWLINE
+
+REP(m)
+   REGEX("[!-+--~]([ -+--~]{0,58}[!-+--~])?", n) STRING(",")
+   INT(1, 10^5, p) STRING(",")
+   INT(1, 100, c) STRING(",")
+   INT(1, 10080, t) STRING(",")
+   INT(1, 10080, r) NEWLINE
+END

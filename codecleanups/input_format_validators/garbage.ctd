@@ -1,0 +1,6 @@
+INT(1, 365, n) NEWLINE
+SET(p = 0)
+REP(n, SPACE)
+    INT(p + 1, 365, p)
+END
+NEWLINE

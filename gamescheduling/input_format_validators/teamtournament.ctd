@@ -1,0 +1,5 @@
+INT(1, 25, n)
+SPACE
+INT(2, 25, m)
+NEWLINE
+ASSERT(n * m <= 100)

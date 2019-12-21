@@ -1,0 +1,11 @@
+INT(2, 2500, n)
+SPACE
+INT(2, n, k)
+NEWLINE
+
+REPI(i, n-1, NEWLINE)
+    INT(0, i)
+END
+
+NEWLINE
+EOF

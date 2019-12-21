@@ -1,0 +1,14 @@
+INT(1, 5, n)
+SPACE
+INT(1, 5, m)
+SPACE
+INT(1, 100, d)
+NEWLINE
+REP(n, SPACE)
+    INT(1, 6)
+END
+NEWLINE
+REP(m, SPACE)
+    INT(1, 6)
+END
+NEWLINE

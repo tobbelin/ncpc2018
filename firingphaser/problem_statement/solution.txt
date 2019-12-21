@@ -1,0 +1,12 @@
+It is tempting to assume that the solution touches two corners from the set of
+all rectangle corners. This is not true. It is safe to assume that it touches
+one. Guess this corner v.
+
+Although it is not true that it will touch a second corner, it is true that it
+will touch a side s such that v is not one of the endpoints of s. Guess s.
+
+Let one endpoint of the solution slide along s, while ensuring the line to go
+through v. Project the time when the line hits and leaves every rectangle onto
+s and do a greedy sweep through in the end.
+
+Running time O(n^3).

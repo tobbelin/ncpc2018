@@ -1,0 +1,16 @@
+# problem.yaml
+author: Torstein Strømme
+source: Nordic Collegiate Programming Contest 2018
+license: cc by-sa
+
+limits:
+  time_multiplier: 2
+#  time_safety_margin: 2           # (default is 2)
+#  memory: 256                     # MB
+#  output: 8                      # MB
+#  compilation_time: 60           # seconds
+#  validation_time: 60            # seconds
+#  validation_memory: 1024        # MB
+#  validation_output: 8           # MB
+
+# validator_flags: float_tolerance 1.1e-6
